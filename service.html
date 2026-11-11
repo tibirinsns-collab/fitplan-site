@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【実習】サービス・料金｜FitPlan</title>
+  <meta name="description" content="FitPlanのサービス内容と料金プラン。無料のメニュー作成から、記録アプリ、オンラインコーチングまで。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <p class="practice-note">本サイトは講義課題として制作したものです。</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="FitPlan トップへ">
+        <img src="images/logo.svg" alt="" width="36" height="36">
+        <span class="logo-text">Fit<span>Plan</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span></button>
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="service.html" aria-current="page">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="menu.html" class="btn btn-primary btn-sm">メニューを作る</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">ホーム</a> ＞ サービス・料金</p>
+        <span class="en">SERVICE &amp; PRICE</span>
+        <h1>サービス・料金</h1>
+        <p>まずは無料のメニュー作成から。続けたくなったら、記録やコーチングで本格的にサポートします。</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="en">PLANS</span>
+          <h2>目的に合わせて選べる3つのプラン</h2>
+          <p>表示価格はすべて税込です（仮想企業のため実際の販売は行っていません）。</p>
+        </div>
+        <div class="billing-toggle" role="group" aria-label="支払い方法を選ぶ">
+          <button type="button" data-billing="monthly" aria-pressed="true">月払い</button>
+          <button type="button" data-billing="yearly" aria-pressed="false">年払い<span class="save">2か月分お得</span></button>
+        </div>
+        <div class="grid-3 plans">
+          <div class="card plan">
+            <h3>メニュー作成</h3>
+            <p>まずは試してみたい方に</p>
+            <p class="price">0<small> 円</small></p>
+            <p class="price-note">ずっと無料</p>
+            <ul>
+              <li>5つの質問でメニュー自動作成</li>
+              <li>ジム用・自宅用に対応</li>
+              <li>印刷して持ち歩ける</li>
+              <li>会員登録不要</li>
+            </ul>
+            <a href="menu.html" class="btn btn-outline">今すぐ作る</a>
+          </div>
+          <div class="card plan featured">
+            <span class="badge">いちばん人気</span>
+            <h3>FitPlan アプリ</h3>
+            <p>習慣にしたい方に</p>
+            <p class="price" data-monthly="980" data-yearly="9,800">980<small> 円／月</small></p>
+            <p class="price-note" data-monthly="年払いなら 9,800円／年" data-yearly="月あたり約817円">年払いなら 9,800円／年</p>
+            <ul>
+              <li>無料プランのすべての機能</li>
+              <li>重量・回数の記録とグラフ表示</li>
+              <li>成長に合わせてメニューを自動更新</li>
+              <li>種目ごとのフォーム解説動画</li>
+              <li>初月無料</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+          </div>
+          <div class="card plan">
+            <h3>オンラインコーチ</h3>
+            <p>確実に結果を出したい方に</p>
+            <p class="price" data-monthly="6,800" data-yearly="68,000">6,800<small> 円／月</small></p>
+            <p class="price-note" data-monthly="年払いなら 68,000円／年" data-yearly="月あたり約5,667円">年払いなら 68,000円／年</p>
+            <ul>
+              <li>アプリプランのすべての機能</li>
+              <li>提携トレーナーによるメニュー監修</li>
+              <li>月2回のビデオ通話相談</li>
+              <li>食事のアドバイス（チャット）</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="worries">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-head">
+          <span class="en">COMPARE</span>
+          <h2>プランの機能比較</h2>
+        </div>
+        <div class="table-scroll">
+          <table class="compare-table">
+            <thead>
+              <tr><th scope="col">機能</th><th scope="col">メニュー作成</th><th scope="col" class="hl">アプリ</th><th scope="col">オンラインコーチ</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">メニュー自動作成</th><td>○</td><td class="hl">○</td><td>○</td></tr>
+              <tr><th scope="row">種目図鑑（やり方解説）</th><td>○</td><td class="hl">○</td><td>○</td></tr>
+              <tr><th scope="row">トレーニング記録・グラフ</th><td>−</td><td class="hl">○</td><td>○</td></tr>
+              <tr><th scope="row">メニューの自動更新</th><td>−</td><td class="hl">○</td><td>○</td></tr>
+              <tr><th scope="row">フォーム解説動画</th><td>−</td><td class="hl">○</td><td>○</td></tr>
+              <tr><th scope="row">トレーナーのメニュー監修</th><td>−</td><td class="hl">−</td><td>○</td></tr>
+              <tr><th scope="row">ビデオ通話相談</th><td>−</td><td class="hl">−</td><td>月2回</td></tr>
+              <tr><th scope="row">食事アドバイス</th><td>−</td><td class="hl">−</td><td>○</td></tr>
+              <tr><th scope="row">料金（月払い）</th><td>0円</td><td class="hl">980円</td><td>6,800円</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="en">OPTIONS</span>
+          <h2>必要なときだけ使えるオプション</h2>
+          <p>どのプランの方でも、1回からご利用いただけます。</p>
+        </div>
+        <div class="grid-3">
+          <div class="card option">
+            <h3>フォームチェック</h3>
+            <p>トレーニング中の動画を送ると、提携トレーナーがフォームを添削してコメントで返します。</p>
+            <p class="option-price"><span class="en">800</span>円／1種目</p>
+          </div>
+          <div class="card option">
+            <h3>単発オンライン相談</h3>
+            <p>メニューの悩みやケガ予防など、30分のビデオ通話でトレーナーに直接相談できます。</p>
+            <p class="option-price"><span class="en">2,000</span>円／30分</p>
+          </div>
+          <div class="card option">
+            <h3>食事プラン作成</h3>
+            <p>目的と体重から、1日の目安カロリーとたんぱく質量、1週間分の献立例をお届けします。</p>
+            <p class="option-price"><span class="en">1,500</span>円／1回</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="target">
+      <div class="container">
+        <div class="section-head">
+          <span class="en">DISCOUNT</span>
+          <h2>おトクな割引・法人プラン</h2>
+        </div>
+        <div class="grid-3">
+          <div class="persona">
+            <span class="tag">学生の方</span>
+            <h3>学割で半額</h3>
+            <p>学生証の確認で、アプリ・オンラインコーチの月額料金が卒業まで半額になります。アプリなら月490円。</p>
+          </div>
+          <div class="persona">
+            <span class="tag">お友だちと一緒に</span>
+            <h3>紹介で1か月無料</h3>
+            <p>お友だちを紹介すると、紹介した方・された方の両方にアプリ1か月分をプレゼントします。</p>
+          </div>
+          <div class="persona">
+            <span class="tag">企業・団体の方</span>
+            <h3>法人プラン 1名 月500円〜</h3>
+            <p>10名から導入できる福利厚生プラン。社員の運動習慣づくりと健康経営をサポートします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container" style="max-width: 900px;">
+        <div class="section-head">
+          <span class="en">PAYMENT</span>
+          <h2>お支払い・解約について</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>お支払い方法</h3>
+            <p>クレジットカード（VISA／Mastercard／JCB／AMEX）、PayPay、キャリア決済に対応しています。月払いは毎月、年払いは初回お申し込み時に一括でお支払いいただきます。</p>
+          </div>
+          <div class="card">
+            <h3>解約・プラン変更</h3>
+            <p>アプリからいつでも解約できます。解約金はかかりません。上位プランへの変更はすぐに、下位プランへの変更は次の更新日から反映されます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="worries">
+      <div class="container">
+        <div class="section-head">
+          <span class="en">POINT</span>
+          <h2>メニューづくりで大切にしていること</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4l10 4v8c0 6-4.5 10-10 12-5.5-2-10-6-10-12V8z"/><path d="M11 16l4 4 6-7"/></svg></div>
+            <h3>安全第一</h3>
+            <p>初心者には、フォームが崩れにくいマシンや自重種目を優先。ケガのリスクを抑えます。</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="5"/><circle cx="16" cy="16" r="1" fill="#ff6b35"/></svg></div>
+            <h3>目的別の負荷設定</h3>
+            <p>筋肥大は8〜12回、引き締めは12〜15回など、目的に合わせて回数と休憩時間を変えています。</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="22" height="20" rx="3"/><path d="M5 13h22M11 4v6M21 4v6"/></svg></div>
+            <h3>回復を考えた曜日配置</h3>
+            <p>同じ部位が連続しないように分割し、休養日をはさんで週のスケジュールを組みます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container faq" id="faq" style="max-width: 800px;">
+        <div class="section-head">
+          <span class="en">FAQ</span>
+          <h2>よくある質問</h2>
+        </div>
+        <details>
+          <summary>本当に無料で使えますか？</summary>
+          <p>はい。メニュー作成機能は会員登録なしで、何度でも無料でご利用いただけます。</p>
+        </details>
+        <details>
+          <summary>運動経験がまったくなくても大丈夫ですか？</summary>
+          <p>大丈夫です。「初心者」を選ぶと、膝つき腕立て伏せやマシン種目など、負担の少ない種目からメニューを作成します。</p>
+        </details>
+        <details>
+          <summary>器具を持っていなくても自宅でできますか？</summary>
+          <p>「自宅」を選ぶと、自重トレーニングや、タオル・ペットボトル・リュックなど身近な物を使う種目でメニューを作成します。</p>
+        </details>
+        <details>
+          <summary>年払いの途中で解約したら返金されますか？</summary>
+          <p>年払いは途中解約による返金はありませんが、残りの期間は最後までご利用いただけます。まずは月払いでお試しいただくのがおすすめです。</p>
+        </details>
+        <details>
+          <summary>学割はいつまで使えますか？</summary>
+          <p>在学中であれば卒業まで適用されます。毎年4月に学生証の再確認をお願いしています。</p>
+        </details>
+        <details>
+          <summary>ケガや持病がある場合はどうすればいいですか？</summary>
+          <p>トレーニングを始める前に、必ず医師にご相談ください。痛みを感じたらすぐに中止してください。</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>まずは無料のメニュー作成から</h2>
+        <p>30秒で、あなたの1週間が決まります。</p>
+        <a href="menu.html" class="btn btn-light">メニューを作る →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="logo-text">Fit<span>Plan</span></span>
+          <p>株式会社FitPlan（講義課題用の仮想企業）<br>TEL 00-0000-0000 ／ 0000@0000.jp</p>
+        </div>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー作成</a></li>
+          <li><a href="service.html">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <p class="copyright">© 2026 FitPlan Inc. (Fictional company) — This site is created as a course exercise.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // 月払い・年払いの料金表示を切り替える
+    const billingButtons = document.querySelectorAll(".billing-toggle button");
+    billingButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const mode = btn.dataset.billing;
+        billingButtons.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+        document.querySelectorAll(".price[data-monthly]").forEach((el) => {
+          el.innerHTML = el.dataset[mode] + `<small> 円／${mode === "yearly" ? "年" : "月"}</small>`;
+        });
+        document.querySelectorAll(".price-note[data-monthly]").forEach((el) => {
+          el.textContent = el.dataset[mode];
+        });
+      });
+    });
+  </script>
+</body>
+</html>

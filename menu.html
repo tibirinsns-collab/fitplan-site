@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【実習】メニュー作成｜FitPlan</title>
+  <meta name="description" content="5つの質問に答えて、あなた専用の1週間筋トレメニューを無料で作成。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <p class="practice-note">本サイトは講義課題として制作したものです。</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="FitPlan トップへ">
+        <img src="images/logo.svg" alt="" width="36" height="36">
+        <span class="logo-text">Fit<span>Plan</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span></button>
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="service.html">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="menu.html" class="btn btn-primary btn-sm" aria-current="page">メニューを作る</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">ホーム</a> ＞ メニュー作成</p>
+        <span class="en">MENU MAKER</span>
+        <h1>あなた専用の筋トレメニューを作る</h1>
+        <p>5つの質問に答えて「メニューを作成」を押すだけ。登録・料金は一切かかりません。</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container generator">
+        <form id="menu-form" class="form-card" aria-label="メニュー作成の質問">
+          <fieldset class="field">
+            <legend>Q1. 目的は？</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="goal" value="muscle" checked><span>筋肉を大きく<small>筋肥大</small></span></label>
+              <label class="choice"><input type="radio" name="goal" value="diet"><span>引き締め<small>減量・ダイエット</small></span></label>
+              <label class="choice"><input type="radio" name="goal" value="health"><span>健康維持<small>体力づくり</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Q2. トレーニング歴は？</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="level" value="1" checked><span>初心者<small>半年未満</small></span></label>
+              <label class="choice"><input type="radio" name="level" value="2"><span>中級者<small>半年〜2年</small></span></label>
+              <label class="choice"><input type="radio" name="level" value="3"><span>上級者<small>2年以上</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>Q3. どこでトレーニングする？</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="place" value="gym" checked><span>ジム<small>マシン・ダンベルあり</small></span></label>
+              <label class="choice"><input type="radio" name="place" value="home"><span>自宅<small>器具なしでOK</small></span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="days">Q4. 週に何回できる？</label>
+            <select id="days" name="days">
+              <option value="2">週2回</option>
+              <option value="3" selected>週3回</option>
+              <option value="4">週4回</option>
+              <option value="5">週5回</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="time">Q5. 1回あたりの時間は？</label>
+            <select id="time" name="time">
+              <option value="30">約30分</option>
+              <option value="45" selected>約45分</option>
+              <option value="60">約60分</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%">メニューを作成する</button>
+        </form>
+
+        <div id="result" aria-live="polite">
+          <div class="card result-empty">
+            <img src="images/coach.svg" alt="ヘッドバンドを巻いたトレーナーのイラスト" width="180" height="180">
+            <h3>ここにあなたのメニューが表示されます</h3>
+            <p>左（スマートフォンでは上）の質問に答えて「メニューを作成する」を押してください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="worries" id="library">
+      <div class="container">
+        <div class="section-head">
+          <span class="en">EXERCISE LIBRARY</span>
+          <h2>種目図鑑</h2>
+          <p>FitPlanが提案する全51種目のやり方を確認できます。部位を選んで、種目名を押してください。</p>
+        </div>
+        <div class="library-tabs" role="tablist" aria-label="部位を選ぶ">
+          <button type="button" role="tab" aria-selected="true" data-part="chest">胸</button>
+          <button type="button" role="tab" aria-selected="false" data-part="back">背中</button>
+          <button type="button" role="tab" aria-selected="false" data-part="legs">脚・お尻</button>
+          <button type="button" role="tab" aria-selected="false" data-part="shoulders">肩</button>
+          <button type="button" role="tab" aria-selected="false" data-part="armsPush">二の腕</button>
+          <button type="button" role="tab" aria-selected="false" data-part="armsPull">力こぶ</button>
+          <button type="button" role="tab" aria-selected="false" data-part="core">体幹・お腹</button>
+        </div>
+        <div id="library-list" class="library-list" role="tabpanel"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="ex-dialog" class="ex-dialog" aria-label="種目の解説">
+    <button type="button" class="dialog-close" aria-label="閉じる">×</button>
+    <div class="dialog-body"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="logo-text">Fit<span>Plan</span></span>
+          <p>株式会社FitPlan（講義課題用の仮想企業）<br>TEL 00-0000-0000 ／ 0000@0000.jp</p>
+        </div>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー作成</a></li>
+          <li><a href="service.html">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <p class="copyright">© 2026 FitPlan Inc. (Fictional company) — This site is created as a course exercise.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/exercise-guide.js"></script>
+  <script src="js/generator.js"></script>
+</body>
+</html>

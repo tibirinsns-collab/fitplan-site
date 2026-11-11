@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
+  <!-- メニュー作成前の案内イラスト／代表メッセージ用のアバター -->
+  <circle cx="110" cy="110" r="106" fill="#d4f15c"/>
+  <!-- 体 -->
+  <path d="M40 210 C 44 160, 74 140, 110 140 C 146 140, 176 160, 180 210 Z" fill="#14213d"/>
+  <path d="M96 140 L110 168 L124 140 Z" fill="#fff"/>
+  <!-- 首と顔 -->
+  <rect x="98" y="118" width="24" height="26" rx="8" fill="#f2c4a0"/>
+  <circle cx="110" cy="90" r="40" fill="#f6d1b1"/>
+  <!-- 髪 -->
+  <path d="M70 88 C 68 52, 96 40, 116 44 C 140 46, 154 64, 150 90 C 142 72, 120 66, 96 70 C 84 72, 76 80, 70 88 Z" fill="#1b1f2a"/>
+  <!-- ヘッドバンド -->
+  <path d="M71 78 C 92 66, 130 64, 150 78 L149 88 C 128 76, 92 76, 71 88 Z" fill="#ff6b35"/>
+  <!-- 顔のパーツ -->
+  <circle cx="96" cy="96" r="4" fill="#1b1f2a"/>
+  <circle cx="124" cy="96" r="4" fill="#1b1f2a"/>
+  <path d="M98 110 Q 110 120, 122 110" stroke="#1b1f2a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <circle cx="86" cy="108" r="5" fill="#ff9b78" opacity="0.6"/>
+  <circle cx="134" cy="108" r="5" fill="#ff9b78" opacity="0.6"/>
+  <!-- ロゴ -->
+  <rect x="138" y="170" width="22" height="12" rx="3" fill="#ff6b35"/>
+</svg>

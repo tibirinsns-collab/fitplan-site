@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【実習】お問い合わせ｜FitPlan</title>
+  <meta name="description" content="株式会社FitPlan（講義課題用の仮想企業）へのお問い合わせフォーム。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <p class="practice-note">本サイトは講義課題として制作したものです。</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="FitPlan トップへ">
+        <img src="images/logo.svg" alt="" width="36" height="36">
+        <span class="logo-text">Fit<span>Plan</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span></button>
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="service.html">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html" aria-current="page">お問い合わせ</a></li>
+          <li><a href="menu.html" class="btn btn-primary btn-sm">メニューを作る</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">ホーム</a> ＞ お問い合わせ</p>
+        <span class="en">CONTACT</span>
+        <h1>お問い合わせ</h1>
+        <p>サービス・料金・法人プランなど、お気軽にご相談ください。</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="en">CONTACT US</span>
+          <h2>お問い合わせ方法</h2>
+          <p>ご都合のよい方法でご連絡ください。（連絡先はすべて架空です）</p>
+        </div>
+        <div class="grid-3">
+          <div class="card contact-method">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h5l2 7-3 2a16 16 0 0 0 7 7l2-3 7 2v5a3 3 0 0 1-3 3A22 22 0 0 1 5 7a3 3 0 0 1 3-3z"/></svg></div>
+            <h3>お電話</h3>
+            <p class="contact-value en">00-0000-0000</p>
+            <p>受付時間：平日 00:00〜00:00</p>
+          </div>
+          <div class="card contact-method">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="24" height="18" rx="3"/><path d="M5 9l11 8 11-8"/></svg></div>
+            <h3>メール</h3>
+            <p class="contact-value en">0000@0000.jp</p>
+            <p>24時間受付・0営業日以内にご返信</p>
+          </div>
+          <div class="card contact-method">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 5C9 5 4 9.5 4 15c0 3.5 2 6.5 5.5 8.3L8 28l5.5-3.2c.8.1 1.7.2 2.5.2 7 0 12-4.5 12-10S23 5 16 5z"/></svg></div>
+            <h3>LINEチャット</h3>
+            <p class="contact-value en">@0000</p>
+            <p>受付時間：毎日 00:00〜00:00</p>
+          </div>
+        </div>
+
+        <dl class="contact-info">
+          <div><dt>所在地</dt><dd>〒000-0000 東京都0000区0000 0-0-0 0000ビル 0F（架空）</dd></div>
+          <div><dt>FAX</dt><dd>00-0000-0000</dd></div>
+          <div><dt>定休日</dt><dd>土・日・祝日（メール・LINEは毎日受付）</dd></div>
+        </dl>
+
+        <p class="faq-link">お問い合わせの前に <a href="service.html#faq">よくある質問</a> もご覧ください。</p>
+      </div>
+    </section>
+
+    <section class="worries">
+      <div class="container" style="max-width: 760px;">
+        <div class="section-head">
+          <span class="en">FORM</span>
+          <h2>お問い合わせフォーム</h2>
+          <p>必要事項をご入力のうえ、「送信内容を確認する」を押してください。</p>
+        </div>
+        <form id="contact-form" class="form-card" novalidate>
+          <p class="notice" style="margin-top:0">※ 本サイトは講義課題のため、入力内容はどこにも送信・保存されません。</p>
+
+          <fieldset class="field">
+            <legend>お問い合わせの種類<span class="req">必須</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="type" value="service" checked><span>サービスについて</span></label>
+              <label class="choice"><input type="radio" name="type" value="plan"><span>料金・お支払い</span></label>
+              <label class="choice"><input type="radio" name="type" value="option"><span>オプションの申込</span></label>
+              <label class="choice"><input type="radio" name="type" value="corp"><span>法人プラン</span></label>
+              <label class="choice"><input type="radio" name="type" value="other"><span>その他</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field" id="company-field" hidden>
+            <label for="company">会社名・団体名<span class="req">必須</span></label>
+            <input type="text" id="company" name="company" autocomplete="off" placeholder="例）株式会社0000">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">お名前<span class="req">必須</span></label>
+              <input type="text" id="name" name="name" required autocomplete="off" placeholder="例）0000 0000">
+            </div>
+            <div class="field">
+              <label for="kana">ふりがな</label>
+              <input type="text" id="kana" name="kana" autocomplete="off" placeholder="例）0000 0000">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">メールアドレス<span class="req">必須</span></label>
+            <input type="email" id="email" name="email" required autocomplete="off" placeholder="例）0000@0000.jp">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="tel">電話番号</label>
+              <input type="tel" id="tel" name="tel" autocomplete="off" placeholder="例）000-0000-0000">
+            </div>
+            <div class="field">
+              <label for="current-plan">ご利用中のプラン</label>
+              <select id="current-plan" name="current-plan">
+                <option>まだ利用していない</option>
+                <option>メニュー作成（無料）</option>
+                <option>FitPlan アプリ</option>
+                <option>オンラインコーチ</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>ご希望の連絡方法</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="reply" value="mail" checked><span>メール</span></label>
+              <label class="choice"><input type="radio" name="reply" value="tel"><span>お電話</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">お問い合わせ内容<span class="req">必須</span></label>
+            <textarea id="message" name="message" rows="6" required placeholder="例）週0回・自宅でできるメニューについて相談したいです。"></textarea>
+          </div>
+
+          <div class="field">
+            <label class="agree"><input type="checkbox" id="agree" name="agree" required> <span>個人情報の取り扱いに同意する<span class="req">必須</span></span></label>
+            <p class="notice" style="margin:4px 0 0">いただいた情報は、お問い合わせへの回答のみに使用します。</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%">送信内容を確認する</button>
+          <p id="form-result" class="notice" role="status" style="text-align:center; margin-bottom:0"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="logo-text">Fit<span>Plan</span></span>
+          <p>株式会社FitPlan（講義課題用の仮想企業）<br>TEL 00-0000-0000 ／ 0000@0000.jp</p>
+        </div>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー作成</a></li>
+          <li><a href="service.html">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <p class="copyright">© 2026 FitPlan Inc. (Fictional company) — This site is created as a course exercise.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // 「法人プラン」を選んだときだけ会社名の入力欄を出す
+    const companyField = document.getElementById("company-field");
+    document.querySelectorAll('input[name="type"]').forEach((radio) => {
+      radio.addEventListener("change", () => {
+        const isCorp = radio.value === "corp" && radio.checked;
+        companyField.hidden = !isCorp;
+        document.getElementById("company").required = isCorp;
+      });
+    });
+
+    // 課題用のデモフォーム：送信はせず、入力チェックだけ行う
+    document.getElementById("contact-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const out = document.getElementById("form-result");
+      if (!form.checkValidity()) {
+        out.textContent = "未入力、または形式が正しくない項目があります。";
+        out.style.color = "#e2541f";
+        return;
+      }
+      out.textContent = "ありがとうございます。（デモのため実際には送信されていません）";
+      out.style.color = "";
+      form.reset();
+      companyField.hidden = true;
+      document.getElementById("company").required = false;
+    });
+  </script>
+</body>
+</html>

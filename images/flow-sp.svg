@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" font-family="Hiragino Sans, 'Noto Sans JP', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#ff6b35"/>
+    </marker>
+  </defs>
+
+  <g stroke="#ff6b35" stroke-width="3" stroke-dasharray="5 5" marker-end="url(#arrow)">
+    <line x1="56" y1="102" x2="56" y2="150"/>
+    <line x1="56" y1="242" x2="56" y2="290"/>
+    <line x1="56" y1="382" x2="56" y2="430"/>
+  </g>
+
+  <!-- STEP 1 -->
+  <circle cx="56" cy="60" r="42" fill="#fff1eb"/>
+  <rect x="40" y="38" width="32" height="44" rx="6" fill="#14213d"/>
+  <rect x="45" y="46" width="22" height="4" rx="2" fill="#d4f15c"/>
+  <rect x="45" y="55" width="18" height="4" rx="2" fill="#fff"/>
+  <rect x="45" y="64" width="20" height="4" rx="2" fill="#fff"/>
+  <text x="116" y="42" font-size="12" font-weight="700" fill="#ff6b35" font-family="Oswald, sans-serif">STEP 1</text>
+  <text x="116" y="66" font-size="17" font-weight="700" fill="#14213d">5つの質問に答える</text>
+  <text x="116" y="88" font-size="12" fill="#5d6475">目的・レベル・場所・頻度・時間</text>
+
+  <!-- STEP 2 -->
+  <circle cx="56" cy="200" r="42" fill="#fff1eb"/>
+  <rect x="34" y="178" width="20" height="20" rx="4" fill="#14213d"/>
+  <rect x="58" y="178" width="20" height="20" rx="4" fill="#ff6b35"/>
+  <rect x="34" y="202" width="20" height="20" rx="4" fill="#ff6b35"/>
+  <rect x="58" y="202" width="20" height="20" rx="4" fill="#14213d"/>
+  <text x="116" y="182" font-size="12" font-weight="700" fill="#ff6b35" font-family="Oswald, sans-serif">STEP 2</text>
+  <text x="116" y="206" font-size="17" font-weight="700" fill="#14213d">部位の分け方を決定</text>
+  <text x="116" y="228" font-size="12" fill="#5d6475">週2回は全身、週4回は上下分割など</text>
+
+  <!-- STEP 3 -->
+  <circle cx="56" cy="340" r="42" fill="#fff1eb"/>
+  <rect x="30" y="336" width="8" height="18" rx="2" fill="#14213d"/>
+  <rect x="74" y="336" width="8" height="18" rx="2" fill="#14213d"/>
+  <rect x="38" y="342" width="36" height="5" rx="2" fill="#9aa3b5"/>
+  <path d="M34 326h44" stroke="#ff6b35" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="62" cy="326" r="5" fill="#ff6b35"/>
+  <text x="116" y="322" font-size="12" font-weight="700" fill="#ff6b35" font-family="Oswald, sans-serif">STEP 3</text>
+  <text x="116" y="346" font-size="17" font-weight="700" fill="#14213d">種目と負荷を選択</text>
+  <text x="116" y="368" font-size="12" fill="#5d6475">レベル別の種目・回数・休憩時間</text>
+
+  <!-- STEP 4 -->
+  <circle cx="56" cy="480" r="42" fill="#ff6b35"/>
+  <rect x="34" y="458" width="44" height="42" rx="6" fill="#fff"/>
+  <rect x="34" y="458" width="44" height="10" rx="4" fill="#14213d"/>
+  <path d="M45 482l7 7 13-14" stroke="#ff6b35" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="116" y="462" font-size="12" font-weight="700" fill="#ff6b35" font-family="Oswald, sans-serif">STEP 4</text>
+  <text x="116" y="486" font-size="17" font-weight="700" fill="#14213d">1週間メニュー完成</text>
+  <text x="116" y="508" font-size="12" fill="#5d6475">印刷してジムに持っていける</text>
+</svg>

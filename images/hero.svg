@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 460" font-family="Hiragino Sans, 'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <circle cx="270" cy="230" r="200" fill="#d4f15c"/>
+  <circle cx="440" cy="80" r="26" fill="#ff6b35" opacity="0.9"/>
+  <circle cx="70" cy="120" r="12" fill="#14213d"/>
+  <path d="M455 300l8 16 16 8-16 8-8 16-8-16-16-8 16-8z" fill="#14213d"/>
+  <path d="M90 330l5 10 10 5-10 5-5 10-5-10-10-5 10-5z" fill="#ff6b35"/>
+
+  <!-- スマホ -->
+  <rect x="160" y="40" width="220" height="390" rx="30" fill="#14213d"/>
+  <rect x="172" y="66" width="196" height="344" rx="16" fill="#ffffff"/>
+  <rect x="240" y="50" width="60" height="7" rx="3.5" fill="#2c3d66"/>
+
+  <!-- 画面の中身 -->
+  <rect x="172" y="66" width="196" height="64" rx="16" fill="#ff6b35"/>
+  <rect x="172" y="110" width="196" height="20" fill="#ff6b35"/>
+  <text x="188" y="94" fill="#fff" font-size="11" font-weight="700" letter-spacing="1">TODAY'S MENU</text>
+  <text x="188" y="118" fill="#fff" font-size="15" font-weight="700">月曜日｜全身 A</text>
+
+  <g font-size="12" fill="#1b1f2a">
+    <g transform="translate(188 150)">
+      <rect width="18" height="18" rx="5" fill="#ff6b35"/>
+      <path d="M4 9l3.5 3.5L14 6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="13" font-weight="700">スクワット</text>
+      <text x="164" y="13" text-anchor="end" fill="#5d6475">3×10</text>
+    </g>
+    <line x1="188" y1="182" x2="352" y2="182" stroke="#e3e0d8"/>
+    <g transform="translate(188 196)">
+      <rect width="18" height="18" rx="5" fill="#ff6b35"/>
+      <path d="M4 9l3.5 3.5L14 6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="13" font-weight="700">腕立て伏せ</text>
+      <text x="164" y="13" text-anchor="end" fill="#5d6475">3×12</text>
+    </g>
+    <line x1="188" y1="228" x2="352" y2="228" stroke="#e3e0d8"/>
+    <g transform="translate(188 242)">
+      <rect width="18" height="18" rx="5" fill="none" stroke="#c9c5bb" stroke-width="2"/>
+      <text x="28" y="13" font-weight="700">ラットプル</text>
+      <text x="164" y="13" text-anchor="end" fill="#5d6475">3×10</text>
+    </g>
+    <line x1="188" y1="274" x2="352" y2="274" stroke="#e3e0d8"/>
+    <g transform="translate(188 288)">
+      <rect width="18" height="18" rx="5" fill="none" stroke="#c9c5bb" stroke-width="2"/>
+      <text x="28" y="13" font-weight="700">プランク</text>
+      <text x="164" y="13" text-anchor="end" fill="#5d6475">3×30秒</text>
+    </g>
+  </g>
+
+  <!-- 進捗バー -->
+  <text x="188" y="344" font-size="10" fill="#5d6475">今日の達成度</text>
+  <rect x="188" y="352" width="164" height="10" rx="5" fill="#f1eee7"/>
+  <rect x="188" y="352" width="82" height="10" rx="5" fill="#ff6b35"/>
+  <text x="352" y="344" font-size="10" fill="#ff6b35" text-anchor="end" font-weight="700">50%</text>
+
+  <!-- ダンベル -->
+  <g transform="translate(40 360) rotate(-18)">
+    <rect x="0" y="10" width="22" height="50" rx="6" fill="#14213d"/>
+    <rect x="22" y="18" width="12" height="34" rx="4" fill="#2c3d66"/>
+    <rect x="34" y="30" width="78" height="10" rx="3" fill="#9aa3b5"/>
+    <rect x="112" y="18" width="12" height="34" rx="4" fill="#2c3d66"/>
+    <rect x="124" y="10" width="22" height="50" rx="6" fill="#14213d"/>
+  </g>
+
+  <!-- ケトルベル -->
+  <g transform="translate(392 330)">
+    <path d="M18 34 C 18 4, 72 4, 72 34" fill="none" stroke="#14213d" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="45" cy="70" r="44" fill="#ff6b35"/>
+    <ellipse cx="30" cy="56" rx="10" ry="14" fill="#fff" opacity="0.25"/>
+    <text x="45" y="82" text-anchor="middle" fill="#fff" font-size="22" font-weight="700" font-family="Oswald, sans-serif">8kg</text>
+  </g>
+</svg>

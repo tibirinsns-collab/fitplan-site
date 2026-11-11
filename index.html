@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【実習】FitPlan｜あなたに最適な筋トレメニューを30秒で</title>
+  <meta name="description" content="5つの質問に答えるだけで、目的・レベル・環境に合った1週間の筋トレメニューを自動で作成。株式会社FitPlan（講義課題用の仮想企業）のサイトです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <p class="practice-note">本サイトは講義課題として制作したものです。</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="FitPlan トップへ">
+        <img src="images/logo.svg" alt="" width="36" height="36">
+        <span class="logo-text">Fit<span>Plan</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav"><span></span></button>
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="index.html" aria-current="page">ホーム</a></li>
+          <li><a href="service.html">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="menu.html" class="btn btn-primary btn-sm">メニューを作る</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ヒーロー -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-label">登録不要・無料</span>
+          <h1><span class="nb">あなたに</span><span class="nb"><em>最適な筋トレ</em>を、</span><br>30秒で。</h1>
+          <p class="hero-lead">目的・レベル・場所・時間。5つの質問に答えるだけで、1週間分のトレーニングメニューが完成します。もう「ジムで何をすればいいかわからない」とは言わせません。</p>
+          <div class="hero-actions">
+            <a href="menu.html" class="btn btn-primary">無料でメニューを作る →</a>
+            <a href="service.html" class="btn btn-outline">サービスを見る</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong class="en">5</strong><span>つの質問</span></div>
+            <div><strong class="en">30<small>sec</small></strong><span>で完成</span></div>
+            <div><strong class="en">50+</strong><span>種目を収録</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hero.svg" alt="スマートフォンに表示された筋トレメニューと、ダンベル・ケトルベルのイラスト" width="520" height="460">
+        </div>
+      </div>
+    </section>
+
+    <!-- 悩み -->
+    <section class="worries">
+      <div class="container">
+        <div class="section-head">
+          <span class="en">PROBLEM</span>
+          <h2>こんな悩み、ありませんか？</h2>
+        </div>
+        <ul class="worry-list">
+          <li>ジムに入会したけど、何をすればいいかわからない</li>
+          <li>SNSのメニューは上級者向けで続かない</li>
+          <li>忙しくて1回30分しか時間がとれない</li>
+          <li>自宅で道具なしでも効果を出したい</li>
+          <li>同じ種目ばかりで飽きてしまう</li>
+          <li>パーソナルトレーナーは高くて頼めない</li>
+        </ul>
+        <p class="worry-answer"><span>FitPlanなら、あなたの条件だけで最適なメニューが決まります。</span></p>
+      </div>
+    </section>
+
+    <!-- 特徴 -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="en">FEATURES</span>
+          <h2>FitPlanが選ばれる3つの理由</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></svg></div>
+            <h3>30秒でメニュー完成</h3>
+            <p>会員登録は不要。質問に答えるだけで、曜日ごとの種目・セット数・回数・休憩時間まで自動で決まります。</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26h24M8 26V16M16 26V8M24 26V12"/></svg></div>
+            <h3>レベルに合わせて調整</h3>
+            <p>初心者には安全なマシンや膝つき種目を、上級者には高強度の種目を。無理なく続けられる負荷を提案します。</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15l11-9 11 9M8 13v13h16V13"/></svg></div>
+            <h3>ジムでも自宅でも</h3>
+            <p>器具がそろったジム用と、自重・身近な道具でできる自宅用の2パターンを用意。場所を選ばず続けられます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 使い方（自作図） -->
+    <section class="worries">
+      <div class="container">
+        <div class="section-head">
+          <span class="en">HOW IT WORKS</span>
+          <h2>メニューができるまで</h2>
+          <p>トレーニングの基本原則にもとづいて、あなたの条件から自動で組み立てます。</p>
+        </div>
+        <figure class="flow-figure">
+          <img class="only-pc" src="images/flow.svg" alt="ステップ1 5つの質問に答える、ステップ2 頻度に合わせて部位の分け方を決定、ステップ3 レベルと目的から種目・回数を選択、ステップ4 1週間のメニューが完成" width="1000" height="260">
+          <img class="only-sp" src="images/flow-sp.svg" alt="" width="360" height="560">
+          <figcaption>図：FitPlanのメニュー作成の流れ（オリジナル図）</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 対象者 -->
+    <section class="target">
+      <div class="container">
+        <div class="section-head">
+          <span class="en">FOR YOU</span>
+          <h2>こんな方のためのサービスです</h2>
+          <p>筋トレを「始めたい」「続けたい」すべての人へ。</p>
+        </div>
+        <div class="grid-3">
+          <div class="persona">
+            <span class="tag">20代・学生</span>
+            <h3>はじめてのジム通い</h3>
+            <p>何から始めればいいか迷う人に、安全で基本的な種目から順番に提案します。</p>
+          </div>
+          <div class="persona">
+            <span class="tag">30代・会社員</span>
+            <h3>忙しくても効率よく</h3>
+            <p>1回30分・週2回からOK。限られた時間で全身をバランスよく鍛えられます。</p>
+          </div>
+          <div class="persona">
+            <span class="tag">40代〜・在宅ワーク</span>
+            <h3>自宅で健康づくり</h3>
+            <p>器具なしでできる自重トレーニング中心。運動不足の解消と体力維持に。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>さあ、今日から始めよう。</h2>
+        <p>登録不要・完全無料。あなた専用のメニューを今すぐ作成できます。</p>
+        <a href="menu.html" class="btn btn-light">無料でメニューを作る →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="logo-text">Fit<span>Plan</span></span>
+          <p>株式会社FitPlan（講義課題用の仮想企業）<br>TEL 00-0000-0000 ／ 0000@0000.jp</p>
+        </div>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー作成</a></li>
+          <li><a href="service.html">サービス・料金</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <p class="copyright">© 2026 FitPlan Inc. (Fictional company) — This site is created as a course exercise.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
